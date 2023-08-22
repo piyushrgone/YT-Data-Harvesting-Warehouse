@@ -50,8 +50,3 @@ st.sidebar.markdown("[GitHub Repository](https://github.com/yourusername/your-re
 st.sidebar.header("Project Information")
 st.sidebar.write("This Streamlit app allows users to interact with YouTube data.")
 st.sidebar.write("Enter a YouTube channel ID, retrieve details, and more.")
-
-# Display user's name (assuming you have access to it)
-user_name = "Piyush Gone"  # Replace with the user's name
-st.sidebar.write(f"Logged in as: {user_name}")
-
