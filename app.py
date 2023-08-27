@@ -3,6 +3,13 @@ from pymongo import MongoClient
 import os
 from googleapiclient.discovery import build
 
+# Set page configuration
+st.set_page_config(
+    page_title="YouTube Data Harvesting",
+    page_icon=":movie_camera:",
+    layout="wide"
+)
+
 st.image("https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500")
 # Streamlit app title and description
 st.title("YouTube Data Harvesting and Warehousing")
