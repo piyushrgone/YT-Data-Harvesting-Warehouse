@@ -1,31 +1,92 @@
-# YT-Data-Harvesting-Warehouse
-Python scripting, Data Collection, MongoDB, Streamlit, API integration, Data Managment using MongoDB (Atlas) and SQL
-This project involves various steps, from retrieving data from the YouTube API to storing it in a MongoDB data lake, migrating it to a SQL data warehouse, and then visualizing and querying the data in a Streamlit application. Here's a summary of the approach and key components of the project:
+# YouTube Data Harvesting and Warehousing
 
-Approach and Key Components:
+Welcome to the YouTube Data Harvesting and Warehousing project by Piyush Gone. This project is designed to collect, store, and analyze data from multiple YouTube channels, utilizing Python, MongoDB, SQL, and Streamlit.
 
-Set up a Streamlit App:
+## Table of Contents
 
-Use Streamlit to create a user-friendly interface where users can interact with the application.
-Implement input fields for entering YouTube channel IDs and buttons for data retrieval and migration.
-Connect to the YouTube API:
+- [Project Overview](#project-overview)
+- [Project Features](#project-features)
+- [Project Components](#project-components)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Data Storage](#data-storage)
+- [Data Visualization](#data-visualization)
+- [SQL Queries](#sql-queries)
+- [Project Evaluation](#project-evaluation)
+- [Contributing](#contributing)
+- [License](#license)
 
-Use the google-api-python-client library to connect to the YouTube Data API.
-Retrieve channel information, video details, and related data using API requests.
-Store Data in MongoDB:
+## Project Overview
 
-Use MongoDB as a data lake to store the retrieved data in a structured format.
-Store channel details, video information, comments, and related data in separate documents.
-Migrate Data to SQL Data Warehouse:
+This project aims to create a Streamlit application that allows users to access and analyze data from multiple YouTube channels. The application features data retrieval from the YouTube API, storage in a MongoDB data lake, migration to a SQL data warehouse, and various data analysis capabilities.
 
-Choose a SQL database like MySQL or PostgreSQL to serve as the data warehouse.
-Design tables to store channel, video, and comment data in a structured manner.
-Query the SQL Data Warehouse:
+## Project Features
 
-Use SQL queries to retrieve and join data from different tables in the SQL data warehouse.
-Allow users to search for specific data using different search criteria.
-Display Data in Streamlit App:
+- Retrieve channel details including name, subscribers, and total video count.
+- Collect video information including video ID, title, views, likes, dislikes, and comments.
+- Store data in a MongoDB data lake.
+- Migrate channel data from the data lake to a SQL data warehouse.
+- Perform SQL queries to analyze and visualize data.
+- Streamlit-based user interface for ease of use.
 
-Use Streamlit's data visualization features to create tables, charts, and graphs.
-Display retrieved data from both MongoDB and the SQL data warehouse in the Streamlit UI.
-GitHub Repository and Documentation:
+## Project Components
+
+The project consists of the following components:
+
+- **YouTube Data Retrieval**: Python scripts to connect to the YouTube API and retrieve channel and video data.
+
+- **MongoDB Data Storage**: Code to store channel details, video information, and comments in a MongoDB Atlas data lake.
+
+- **SQL Data Warehouse**: SQL code to design tables for storing channel and video data in a structured manner.
+
+- **Streamlit App**: The user interface built using Streamlit to interact with the data, retrieve details, and perform analysis.
+
+## Getting Started
+
+1. Clone this repository to your local machine.
+
+2. Set up your MongoDB Atlas cluster and obtain the connection URI.
+
+3. Set up your MySQL or PostgreSQL database for the SQL data warehouse.
+
+4. Install the required Python packages listed in `requirements.txt` using `pip install -r requirements.txt`.
+
+## Usage
+
+1. Run the Streamlit app using `streamlit run app.py`.
+
+2. Enter a YouTube channel ID to retrieve channel details.
+
+3. Use the app to migrate channels to the data warehouse, perform SQL queries, and visualize data.
+
+## Data Storage
+
+- MongoDB Atlas is used as a data lake to store retrieved data in a structured format.
+
+- SQL databases (e.g., MySQL or PostgreSQL) serve as the data warehouse for structured data storage.
+
+## Data Visualization
+
+- The Streamlit app provides data visualization features such as charts and graphs for data analysis.
+
+## SQL Queries
+
+Sample SQL queries to perform various analyses on the data:
+
+- List of top videos and their corresponding channels.
+- Channels with the most number of videos.
+- Top 10 most viewed videos and their respective channels.
+- Number of comments on each video and their corresponding video names.
+- Videos with the highest number of likes and their corresponding channel names.
+
+## Project Evaluation
+
+The project is designed with maintainability, portability, and proper coding standards in mind. It includes a well-documented README file, and the code is modular for easy maintenance.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please fork the repository and create a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
